@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Nhập số thu nhập trong tháng (đơn vị: trđ)")
+  if (a<0){
+      alert("Đây không phải là số tiền thực tế")
+  }
+  else {
+      if (a < 5) {
+          let b = a * 5 / 100;
+          alert("Thuế thu nhập cá nhân phải nộp là: " + b +" tr ");
+      } else {
+          if (a < 10) {
+              let b = a * 10 / 100;
+              alert("Thuế thu nhập cá nhân phải nộp là: " + b +" tr ");
+          } else {
+              if (a < 18) {
+                  let b = a * 15 / 100;
+                  alert("Thuế thu nhập cá nhân phải nộp là: " + b +" tr ");
+              } else {
+                  if (a < 32) {
+                      let b = a * 20 / 100;
+                      alert("Thuế thu nhập cá nhân phải nộp là: " + b +" tr ");
+                  } else {
+                      let b = a * 25 / 100;
+                      alert("Thuế thu nhập cá nhân phải nộp là: " + b +" tr ");
+                  }
+              }
+          }
+      }
+  }
+</script>
+</body>
+</html>

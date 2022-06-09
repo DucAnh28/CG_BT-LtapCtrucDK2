@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích tam giác vuông</title>
+</head>
+<body>
+<label><input id="canha" type="number">Nhập cạnh thứ nhất</label>
+<label><input id="canhb" type="number">Nhập cạnh thứ hai</label>
+<button type="submit" onclick="tinh()" >Tính toán</button>
+<script>
+    function tinh() {
+        let a = document.getElementById("canha").value;
+        let b = document.getElementById("canhb").value;
+        let s = a*b/2;
+        if (a,b<0) {
+            alert("Đây không phải là một cạnh của hình tam giác vuông")
+        }
+        else {
+            alert("Diện tích hình chữ nhật là: " + s)
+        }
+    }
+</script>
+</body>
+</html>

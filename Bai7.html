@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Nhập số a</th>
+        <th>Nhập số b</th>
+        <th>Nhập số c</th>
+    </tr>
+    <tr>
+        <td><label><input id="Soa" type="number"></label></td>
+        <td><label><input id="Sob" type="number"></label></td>
+        <td><label><input id="Soc" type="number"></label></td>
+    </tr>
+</table>
+<br>
+<button onclick="ptbac2()">Tính toán cực mạnh</button>
+<a href="Bai7.html" onclick=""></a>
+
+</body>
+<script>
+    function ptbac2() {
+        let a = document.getElementById("Soa").value;
+        let b = document.getElementById("Sob").value;
+        let c = document.getElementById("Soc").value;
+        let delta = b * b - 4 * a * c;
+        if (a == 0) {
+            // alert("Đây là phương trình bậc 1 thì tự tính đê");
+            window.open()
+        }
+        else
+            if (delta < 0) {
+            alert("Phương trình vô nghiệm")
+            }
+            else
+                if (delta == 0) {
+                    alert("Phương trình có một nghiệm kép là: " + (-b/2*a))
+                } else {
+                    alert("Phương trình có hai nghiệm là:   " + ((-b+Math.sqrt(delta))/(2*a) + " và " +((-b-Math.sqrt(delta))/(2*a))))
+                }
+    }
+</script>
+</html>

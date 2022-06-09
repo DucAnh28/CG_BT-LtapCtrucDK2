@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Diện tích hcn khi biết 2 cạnh a b</title>
+</head>
+<body>
+<label><input id="canhdai" type="number">Nhập cạnh dài</label>
+<label><input id="canhngan" type="number">Nhập cạnh ngắn</label>
+<button type="submit" onclick="tinh()" >Tính toán</button>
+<script>
+    function tinh() {
+        let a = document.getElementById("canhngan").value;
+        let b = document.getElementById("canhdai").value;
+        let s = a * b;
+        if (a,b<0) {
+            alert("Đây không phải là một cạnh của hình chữ nhật")
+        }
+        else {
+            alert("Diện tích hình chữ nhật là: " + s)
+        }
+    }
+
+</script>
+</body>
+</html>
